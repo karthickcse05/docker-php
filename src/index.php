@@ -1,6 +1,6 @@
 <?php
 
-echo "Hello, World from Docker-PHP testing! <br>";
+echo "Hello, World from Docker-PHP testing demo jan09! <br>";
 echo "Hello AWS! <br>";
 echo '<img src="https://www.docker.com/sites/default/files/horizontal.png">';
 
