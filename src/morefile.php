@@ -121,3 +121,15 @@ function decode(string $text): string
     }
     return $decodedText;
 }
+
+function xorCipher(string $input_string, string $key)
+{
+    $key_len = strlen($key);
+    $result = array();
+
+    for ($idx = 0; $idx < strlen($input_string); $idx++) {
+        array_push($result, $input_string[$idx] ^ $key[$idx % $key_len]);
+    }
+
+    return join("", $result);
+}
